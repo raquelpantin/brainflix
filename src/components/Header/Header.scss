@@ -35,6 +35,12 @@
     }
   }
 
+  &__search-icon {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.75rem;
+  }
+
   &__avatar {
     border-radius: 50%;
     height: 2.25rem;
