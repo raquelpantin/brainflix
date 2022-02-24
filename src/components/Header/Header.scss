@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  position: relative;
 
   &__logo {
     @include padding__hdln--top;
@@ -19,10 +19,10 @@
   &__search-container {
     display: flex;
     position: relative;
+    margin-right: 3rem;
   }
 
   &__searchbar {
-    padding-left: 2rem;
     height: 2.25rem;
     width: 15rem;
     border-radius: 4px;
@@ -46,6 +46,9 @@
     height: 2.25rem;
     width: 2.25rem;
     background-color: $mercury;
+    position: absolute;
+    top: 3.95rem;
+    right: 0.07rem;
     @include tablet {
       height: 2.5rem;
       width: 2.5rem;
