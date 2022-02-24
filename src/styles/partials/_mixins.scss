@@ -56,3 +56,44 @@
   line-height: 1.25rem;
   font-weight: 700;
 }
+
+/*Layout Grid*/
+@mixin layout {
+  margin: 0 1rem;
+  @include tablet {
+    margin: 0 2.25rem;
+  }
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+
+/*Padding*/
+
+@mixin padding__hdln--top {
+  padding-top: 1.5rem;
+  @include tablet {
+    padding-top: 2.25rem;
+  }
+}
+
+@mixin padding__hdln--bottom {
+  padding-bottom: 1rem;
+  @include tablet {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@mixin padding__component--top {
+  padding-top: 1rem;
+  @include tablet {
+    padding-top: 1.5rem;
+  }
+}
+
+@mixin padding__component--bottom {
+  padding-bottom: 1rem;
+  @include tablet {
+    padding-bottom: 1.5rem;
+  }
+}

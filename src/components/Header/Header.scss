@@ -1,0 +1,30 @@
+@use "../../App.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset" as *;
+
+.header {
+  @include layout;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__logo {
+    @include padding__hdln--top;
+    @include padding__hdln--bottom;
+  }
+
+  &__search-container {
+    display: flex;
+    position: relative;
+  }
+
+  &__searchbar {
+  }
+
+  &__avatar {
+    width: 10%;
+  }
+}
