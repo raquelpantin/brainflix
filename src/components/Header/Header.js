@@ -10,7 +10,7 @@ const Header = (props) => {
     <header className="header">
       <img className="header__logo" src={logo} alt="Brainflix Logo"></img>
       <div className="header__search-container">
-        <input className="header__searchbar" placeholder="Search" />
+        <input className="header__searchbar" type="text" placeholder="Search" />
         <img className="header__search-icon" src={searchIcon}></img>
       </div>
       <img className="header__avatar" src={avatar}></img>
