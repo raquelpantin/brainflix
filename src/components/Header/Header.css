@@ -134,6 +134,17 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    margin: 0rem, 2rem, 0rem;
+  }
+}
 .header__logo {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -148,10 +159,21 @@ body {
     padding-bottom: 1.5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-bottom: 2.25rem;
+    margin-right: 15vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container-all {
+    display: flex;
+    align-items: center;
+  }
+}
 .header__search-container {
   display: flex;
   position: relative;
-  margin-right: 3rem;
 }
 .header__searchbar {
   height: 2.25rem;
@@ -177,14 +199,25 @@ body {
   height: 2.25rem;
   width: 2.25rem;
   background-color: #e1e1e1;
-  position: absolute;
-  top: 3.95rem;
-  right: 0.07rem;
+  margin-left: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .header__avatar {
     height: 2.5rem;
     width: 2.5rem;
+    display: none;
+  }
+}
+.header__avatar--tablet-dt {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__avatar--tablet-dt {
+    display: flex;
+    border-radius: 50%;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: #e1e1e1;
   }
 }
 .header__upload-container {
@@ -205,6 +238,11 @@ body {
     padding-bottom: 1.5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__upload-container {
+    width: 12rem;
+  }
+}
 .header__button {
   background-color: #0095ff;
   border-radius: 4px;
@@ -216,10 +254,27 @@ body {
   line-height: 1.25rem;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .header__button {
+    width: 9.375rem;
+    margin-left: 1.5rem;
+  }
+}
+.header__button:hover {
+  background-color: #0065ad;
+}
 .header__upload-icon {
   position: absolute;
   top: 1.5rem;
   left: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .header__upload-icon {
+    left: 2rem;
+    top: 2.15rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 
 ::-moz-placeholder {

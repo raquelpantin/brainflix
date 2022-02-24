@@ -9,14 +9,21 @@ const Header = (props) => {
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="Brainflix Logo"></img>
-      <div className="header__search-container">
-        <input className="header__searchbar" type="text" placeholder="Search" />
-        <img className="header__search-icon" src={searchIcon}></img>
-      </div>
-      <img className="header__avatar" src={avatar}></img>
-      <div className="header__upload-container">
-        <button className="header__button">UPLOAD</button>
-        <img className="header__upload-icon" src={upload}></img>
+      <div className="header__container-all">
+        <div className="header__search-container">
+          <input
+            className="header__searchbar"
+            type="text"
+            placeholder="Search"
+          />
+          <img className="header__search-icon" src={searchIcon}></img>
+          <img className="header__avatar" src={avatar}></img>
+        </div>
+        <div className="header__upload-container">
+          <button className="header__button">UPLOAD</button>
+          <img className="header__upload-icon" src={upload}></img>
+        </div>
+        <img className="header__avatar--tablet-dt" src={avatar}></img>
       </div>
     </header>
   );

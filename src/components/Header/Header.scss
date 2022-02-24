@@ -10,16 +10,33 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include desktop {
+    margin: 0rem, 2rem, 0rem;
+  }
 
   &__logo {
     @include padding__hdln--top;
     @include padding__hdln--bottom;
+    @include tablet {
+      padding-bottom: 2.25rem;
+      margin-right: 15vw;
+    }
+  }
+
+  &__container-all {
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__search-container {
     display: flex;
     position: relative;
-    margin-right: 3rem;
   }
 
   &__searchbar {
@@ -46,12 +63,25 @@
     height: 2.25rem;
     width: 2.25rem;
     background-color: $mercury;
-    position: absolute;
-    top: 3.95rem;
-    right: 0.07rem;
+    margin-left: 0.75rem;
     @include tablet {
       height: 2.5rem;
       width: 2.5rem;
+      display: none;
+    }
+  }
+
+  &__avatar--tablet-dt {
+    display: none;
+    @include tablet {
+      display: flex;
+      border-radius: 50%;
+      height: 2.25rem;
+      width: 2.25rem;
+      background-color: $mercury;
+      //   position: absolute;
+      //   top: 3.95rem;
+      //   right: 0.07rem;
     }
   }
 
@@ -62,6 +92,9 @@
     width: 100%;
     @include padding__component--top;
     @include padding__component--bottom;
+    @include tablet {
+      width: 12rem;
+    }
   }
 
   &__button {
@@ -72,12 +105,26 @@
     height: 2.5rem;
     color: $white;
     @include label-button;
+    @include tablet {
+      width: 9.375rem;
+      margin-left: 1.5rem;
+    }
+
+    &:hover {
+      background-color: $brainflix-darkblue;
+    }
   }
 
   &__upload-icon {
     position: absolute;
     top: 1.5rem;
     left: 0.5rem;
+    @include tablet {
+      left: 2rem;
+      top: 2.15rem;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
   }
 }
 
