@@ -8,7 +8,9 @@ import upload from "../../assets/images/icons/upload.svg";
 const Header = (props) => {
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="Brainflix Logo"></img>
+      <a href="../../App.js">
+        <img className="header__logo" src={logo} alt="Brainflix Logo"></img>
+      </a>
       <div className="header__container-all">
         <div className="header__search-container">
           <input
