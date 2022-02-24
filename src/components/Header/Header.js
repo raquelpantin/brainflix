@@ -5,7 +5,7 @@ import searchIcon from "../../assets/images/icons/search.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import upload from "../../assets/images/icons/upload.svg";
 
-const Header = (props) => {
+const Header = () => {
   return (
     <header className="header">
       <a href="../../App.js">
