@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header.js";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
 import videos from "./data/videos.json";
+import CommentForm from "./components/CommentForm/CommentForm.js";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <VideoPlayer videos={videos} />
+      <CommentForm />
     </>
   );
 }
