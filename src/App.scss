@@ -6,3 +6,21 @@
 body {
   font-family: "avenir";
 }
+
+label {
+  color: $silver;
+  @include label-button;
+}
+
+::placeholder {
+  @include body-copy;
+  color: $brainflix-black;
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+    border: 2px solid $brainflix-blue;
+  }
+}
