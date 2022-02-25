@@ -1,17 +1,19 @@
 import Header from "./components/Header/Header.js";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
-import videos from "./data/videos.json";
 import CommentForm from "./components/CommentForm/CommentForm.js";
 import "./App.css";
+import React from "react";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <VideoPlayer videos={videos} />
-      <CommentForm />
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <VideoPlayer />
+        <CommentForm />
+      </>
+    );
+  }
 }
 
 export default App;

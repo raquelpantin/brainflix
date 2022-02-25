@@ -5,7 +5,7 @@ import video from "../../data/videos.json";
 const VideoPlayer = (props) => {
   return (
     <video className="video__img">
-      <div className="video__icons"></div>
+      <div className="video__icons">Hello</div>
     </video>
   );
 };

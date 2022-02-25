@@ -101,6 +101,57 @@ body {
   font-family: "avenir";
 }
 
+label {
+  color: #afafaf;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+::-moz-placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+
+:-ms-input-placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+
+::placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  ::-moz-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  :-ms-input-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  ::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #0095ff;
+}
+
 @font-face {
   font-family: "Avenir";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTPro.ttf") format("ttf");
