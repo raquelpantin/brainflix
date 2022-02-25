@@ -1,0 +1,49 @@
+@use "../../App.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset" as *;
+
+.video {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include layout;
+  }
+
+  &__header {
+    @include subheader;
+    @include padding__hdln--top;
+    @include padding__hdln--bottom;
+    color: $silver;
+  }
+
+  &__card {
+    display: flex;
+    // align-items: center;
+    @include padding__component--bottom;
+  }
+
+  &__image {
+    border-radius: 4px;
+    width: 9rem;
+    height: 5.25rem;
+  }
+
+  &__card-data {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    @include subheader;
+    color: $brainflix-black;
+  }
+
+  &__channel {
+    @include body-copy;
+    color: $brainflix-black;
+  }
+}

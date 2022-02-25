@@ -12,14 +12,14 @@ class CommentList extends Component {
       <>
         {this.state.comments.map((comment) => (
           <article>
-            <img></img>
+            {/* <img></img>
             <div>
               <ul>
                 <li></li>
                 <li></li>
               </ul>
               <p>{comment.title}</p>
-            </div>
+            </div> */}
           </article>
         ))}
       </>
