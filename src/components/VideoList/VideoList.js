@@ -12,7 +12,7 @@ class VideoList extends Component {
       <article className="video__container">
         <h2 className="video__header">NEXT VIDEOS</h2>
         {this.state.videos.map((video) => (
-          <div className="video__card">
+          <div className="video__card" key={video.id}>
             <img
               className="video__image"
               src={video.image}
