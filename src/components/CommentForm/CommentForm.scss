@@ -22,6 +22,16 @@
   &__form {
     margin-left: 1rem;
     position: relative;
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__text-container {
+    @include tablet {
+      width: 80%;
+    }
   }
 
   &__text {
@@ -38,7 +48,14 @@
     margin-bottom: 0.75rem;
     @include tablet {
       height: 2.5rem;
-      padding: 1rem 1rem 1rem 2.5rem;
+      width: 62vw;
+      padding: 0.5rem 1rem 1rem 1rem;
+    }
+  }
+
+  &__button-container {
+    @include tablet {
+      position: relative;
     }
   }
 
@@ -50,6 +67,10 @@
     height: 2.5rem;
     color: $white;
     @include label-button;
+    @include tablet {
+      width: 9.375rem;
+      margin-top: 0.6rem;
+    }
 
     &:hover {
       background-color: $brainflix-darkblue;
@@ -59,6 +80,11 @@
       position: absolute;
       left: 0.75rem;
       bottom: 0.5rem;
+      @include tablet {
+        width: 1.2rem;
+        height: 1.12rem;
+        bottom: 0.7rem;
+      }
     }
   }
 }
