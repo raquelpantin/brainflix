@@ -17,7 +17,11 @@ export default function Main({ videoData, currentVideo, nextVideo }) {
           <CommentForm />
           <CommentList currentVideo={currentVideo} />
         </div>
-        {/* <VideoList nextVideo={nextVideo} videoData={videoData} /> */}
+        <VideoList
+          nextVideo={nextVideo}
+          videoData={videoData}
+          currentVideo={currentVideo}
+        />
       </div>
     </main>
   );
