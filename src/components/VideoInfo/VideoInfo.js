@@ -8,7 +8,14 @@ export default function VideoInfo({ currentVideo }) {
       <h1>{currentVideo.title}</h1>
       <div>
         <h2>{currentVideo.channel}</h2>
-        <p>{currentVideo.timestamp}</p>
+        <p>
+          {new Date(currentVideo.timestamp).getMonth() +
+            1 +
+            "/" +
+            new Date(currentVideo.timestamp).getDate() +
+            "/" +
+            new Date(currentVideo.timestamp).getFullYear()}
+        </p>
       </div>
       <div>
         <div>
