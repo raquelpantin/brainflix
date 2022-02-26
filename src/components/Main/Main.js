@@ -14,8 +14,8 @@ export default function Main({ videoData, currentVideo, nextVideo }) {
       <div className="info__container">
         <div>
           <VideoInfo currentVideo={currentVideo} />
-          {/* <CommentForm />
-          <CommentList currentVideo={currentVideo} /> */}
+          <CommentForm />
+          <CommentList currentVideo={currentVideo} />
         </div>
         {/* <VideoList nextVideo={nextVideo} videoData={videoData} /> */}
       </div>

@@ -1,11 +1,18 @@
-// import Comment from "../Comment/Comment";
-// import "./CommentList.scss";
+import Comment from "../Comment/Comment";
+import "./CommentList.scss";
 
-/* <img></img>
-            <div>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <p>{comment.title}</p>
-            </div> */
+export default function CommentList({ currentVideo }) {
+  return (
+    <section>
+      {currentVideo.comments.map((comment) => {
+        return (
+          <Comment
+            name={comment.name}
+            text={comment.comment}
+            date={comment.timestamp}
+          />
+        );
+      })}
+    </section>
+  );
+}
