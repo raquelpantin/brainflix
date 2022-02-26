@@ -3,3 +3,24 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/reset" as *;
+
+.current-video {
+  &__container {
+    background-color: $brainflix-darkblack;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__video {
+    width: 100%;
+    @include tablet {
+      width: auto;
+      height: 85vh;
+    }
+    @include desktop {
+      width: auto;
+      height: 98vh;
+    }
+  }
+}

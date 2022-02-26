@@ -2,8 +2,12 @@ import "./VideoPlayer.scss";
 
 export default function VideoPlayer({ currentVideo }) {
   return (
-    <section>
-      <video poster={currentVideo.image} width="320" height="240" controls>
+    <section className="current-video__container">
+      <video
+        className="current-video__video"
+        poster={currentVideo.image}
+        controls
+      >
         <source src={currentVideo.video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
