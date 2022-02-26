@@ -11,14 +11,14 @@ export default function Main({ videoData, currentVideo, nextVideo }) {
     <main>
       <Header />
       <VideoPlayer currentVideo={currentVideo} />
-      <div className="info__container">
+      {/* <div className="info__container">
         <div>
           <VideoInfo currentVideo={currentVideo} />
           <CommentForm />
           <CommentList currentVideo={currentVideo} />
         </div>
         <VideoList nextVideo={nextVideo} videoData={videoData} />
-      </div>
+      </div> */}
     </main>
   );
 }

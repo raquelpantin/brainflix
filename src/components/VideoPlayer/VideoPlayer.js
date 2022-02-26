@@ -1,13 +1,12 @@
-// import "./VideoPlayer.scss";
-// import "../../App.scss";
-// import video from "../../data/videos.json";
+import "./VideoPlayer.scss";
 
-// const VideoPlayer = (props) => {
-//   return (
-//     <video className="video__img">
-//       <div className="video__icons">Hello</div>
-//     </video>
-//   );
-// };
-
-// export default VideoPlayer;
+export default function VideoPlayer({ currentVideo }) {
+  return (
+    <section>
+      <video poster={currentVideo.image} width="320" height="240" controls>
+        <source src={currentVideo.video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  );
+}
