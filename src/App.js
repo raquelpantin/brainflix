@@ -1,21 +1,30 @@
 import { Component } from "react";
-import Header from "./components/Header/Header.js";
-import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
-import VideoList from "./components/VideoList/VideoList.js";
-import CommentForm from "./components/CommentForm/CommentForm.js";
-import CommentList from "./components/CommentList/CommentList.js";
-import "./App.css";
+import "./App.scss";
+import Main from "./components/Main/Main";
+import videoData from "./data/video-details.json";
 
 class App extends Component {
+  state = {
+    videoData: videoData,
+    currentVideo: videoData[0],
+  };
+
+  nextVideo = (id) => {
+    const nextVideoId = this.state.videoData.findIndex(
+      (video) => id === video.id
+    );
+    this.setState({
+      currentVideo: this.state.videoData[nextVideoId],
+    });
+  };
+
   render() {
     return (
-      <>
-        <Header />
-        <VideoPlayer />
-        <CommentForm />
-        <CommentList />
-        <VideoList />
-      </>
+      <Main
+        videoData={this.state.videoData}
+        currentVideo={this.state.currentVideo}
+        nextVideo={this.nextVideo}
+      />
     );
   }
 }
