@@ -187,10 +187,16 @@ textarea:focus {
   flex-direction: column;
   width: 82%;
 }
+@media screen and (min-width: 768px) {
+  .user__comment-container {
+    width: 92%;
+  }
+}
 .user__data {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 0.75rem;
 }
 .user__name {
   font-size: 0.813rem;
