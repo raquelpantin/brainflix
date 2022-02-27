@@ -10,16 +10,25 @@ export default function VideoThumbnail({
   return (
     <>
       <div className="video__card">
-        <img
-          className="video__image"
-          src={image}
-          alt="Video Thumbnail"
+        <a
+          className="video__link"
           onClick={() => {
             nextVideo(id);
           }}
-        ></img>
+          href="#root"
+        >
+          <img className="video__image" src={image} alt="Video Thumbnail"></img>
+        </a>
         <div className="video__card-data">
-          <h3 className="video__title">{title}</h3>
+          <a
+            className="video__link-title"
+            onClick={() => {
+              nextVideo(id);
+            }}
+            href="#root"
+          >
+            <h3 className="video__title">{title}</h3>
+          </a>
           <p className="video__channel">{channel}</p>
         </div>
       </div>

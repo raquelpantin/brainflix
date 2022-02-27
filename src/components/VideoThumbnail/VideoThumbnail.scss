@@ -26,6 +26,10 @@
     }
   }
 
+  &__link-title {
+    text-decoration: none;
+  }
+
   &__title {
     @include subheader;
     color: $brainflix-black;

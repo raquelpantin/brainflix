@@ -193,6 +193,9 @@ textarea:focus {
     width: 11rem;
   }
 }
+.video__link-title {
+  text-decoration: none;
+}
 .video__title {
   font-size: 0.813rem;
   line-height: 1.125rem;
