@@ -214,9 +214,20 @@ textarea:focus {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .current-video__container {
+    border-top: none;
+    padding-bottom: 0.5rem;
+  }
+}
 .current-video__container-left {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .current-video__container-left {
+    flex-direction: row;
+  }
 }
 .current-video__channel {
   color: #323232;
@@ -237,6 +248,12 @@ textarea:focus {
     padding-bottom: 1.5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .current-video__channel {
+    padding: 0;
+    margin-right: 2rem;
+  }
+}
 .current-video__date {
   color: #afafaf;
   font-size: 0.813rem;
@@ -254,6 +271,11 @@ textarea:focus {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .current-video__container-right {
+    flex-direction: row;
+  }
+}
 .current-video__views-container {
   display: flex;
   padding-bottom: 1rem;
@@ -263,8 +285,19 @@ textarea:focus {
     padding-bottom: 1.5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .current-video__views-container {
+    padding-bottom: 0;
+  }
+}
 .current-video__views--icon {
   margin-right: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .current-video__views--icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 .current-video__views {
   font-size: 0.813rem;
@@ -282,8 +315,19 @@ textarea:focus {
 .current-video__likes-container {
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .current-video__likes-container {
+    margin-left: 2rem;
+  }
+}
 .current-video__likes--icon {
   margin-right: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .current-video__likes--icon {
+    width: 1.25rem;
+    height: 1.5rem;
+  }
 }
 .current-video__likes {
   font-size: 0.813rem;

@@ -20,17 +20,28 @@
     border-bottom: 1px solid $mercury;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    @include tablet {
+      border-top: none;
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__container-left {
     display: flex;
     flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__channel {
     color: $brainflix-black;
     @include subheader;
     @include padding__component--bottom;
+    @include tablet {
+      padding: 0;
+      margin-right: 2rem;
+    }
   }
 
   &__date {
@@ -41,15 +52,25 @@
   &__container-right {
     display: flex;
     flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__views-container {
     display: flex;
     @include padding__component--bottom;
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__views--icon {
     margin-right: 0.5rem;
+    @include tablet {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__views {
@@ -59,10 +80,17 @@
 
   &__likes-container {
     display: flex;
+    @include tablet {
+      margin-left: 2rem;
+    }
   }
 
   &__likes--icon {
     margin-right: 0.5rem;
+    @include tablet {
+      width: 1.25rem;
+      height: 1.5rem;
+    }
   }
 
   &__likes {
