@@ -206,6 +206,11 @@ textarea:focus {
     padding-bottom: 1.5rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .current-video__title {
+    padding-bottom: 0;
+  }
+}
 .current-video__container {
   display: flex;
   justify-content: space-between;
@@ -320,6 +325,11 @@ textarea:focus {
     margin-left: 2rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .current-video__likes-container {
+    padding-right: 1.5rem;
+  }
+}
 .current-video__likes--icon {
   margin-right: 0.5rem;
 }
@@ -365,6 +375,11 @@ textarea:focus {
 @media screen and (min-width: 768px) {
   .current-video__description {
     padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .current-video__description {
+    padding-right: 1.5rem;
   }
 }
 .current-video__comment-count {

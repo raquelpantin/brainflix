@@ -183,6 +183,13 @@ textarea:focus {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1280px) {
+  .videolist__container {
+    margin-left: 0rem;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 1rem;
+  }
+}
 .videolist__header {
   font-size: 0.813rem;
   line-height: 1.125rem;

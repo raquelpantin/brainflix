@@ -7,6 +7,7 @@ export default function CommentList({ currentVideo }) {
       {currentVideo.comments.map((comment) => {
         return (
           <Comment
+            key={comment.name}
             name={comment.name}
             text={comment.comment}
             date={comment.timestamp}

@@ -12,7 +12,7 @@ export default function Main({ videoData, currentVideo, nextVideo }) {
       <Header />
       <VideoPlayer currentVideo={currentVideo} />
       <div className="info__container">
-        <div>
+        <div className="info__container-left">
           <VideoInfo currentVideo={currentVideo} />
           <CommentForm />
           <CommentList currentVideo={currentVideo} />

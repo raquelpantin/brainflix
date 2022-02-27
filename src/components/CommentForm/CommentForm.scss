@@ -10,6 +10,11 @@
   display: flex;
   justify-content: center;
   border-bottom: solid 1px $mercury;
+  @include desktop {
+    border-bottom: none;
+
+    padding-right: 1.5rem;
+  }
 
   &__avatar {
     border-radius: 50%;
@@ -50,6 +55,9 @@
       height: 2.5rem;
       width: 62vw;
       padding: 0.5rem 1rem 1rem 1rem;
+    }
+    @include desktop {
+      width: 30vw;
     }
   }
 

@@ -21,6 +21,9 @@
     flex-direction: column;
     width: 50%;
     margin-left: 1rem;
+    @include tablet {
+      width: 11rem;
+    }
   }
 
   &__title {
@@ -36,6 +39,6 @@
   &__channel {
     @include body-copy;
     color: $brainflix-black;
-    padding-top: 0.75rem;
+    padding-top: 0.25rem;
   }
 }

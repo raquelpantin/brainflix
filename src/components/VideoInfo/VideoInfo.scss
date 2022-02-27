@@ -6,11 +6,15 @@
 
 .current-video {
   @include layout;
+
   &__title {
     @include page-header;
     @include padding__hdln--top;
     @include padding__hdln--bottom;
     color: $brainflix-black;
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__container {
@@ -83,6 +87,9 @@
     @include tablet {
       margin-left: 2rem;
     }
+    @include desktop {
+      padding-right: 1.5rem;
+    }
   }
 
   &__likes--icon {
@@ -103,6 +110,9 @@
     color: $brainflix-black;
     @include padding__component--top;
     @include padding__component--bottom;
+    @include desktop {
+      padding-right: 1.5rem;
+    }
   }
 
   &__comment-count {

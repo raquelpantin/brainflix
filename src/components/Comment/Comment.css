@@ -175,6 +175,12 @@ textarea:focus {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+@media screen and (min-width: 1280px) {
+  .user__container {
+    border-bottom: none;
+    border-top: 1px solid #e1e1e1;
+  }
+}
 .user__avatar {
   border-radius: 50%;
   height: 2.25rem;
@@ -197,6 +203,11 @@ textarea:focus {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 0.75rem;
+}
+@media screen and (min-width: 1280px) {
+  .user__data {
+    padding-right: 1.5rem;
+  }
 }
 .user__name {
   font-size: 0.813rem;
@@ -237,5 +248,10 @@ textarea:focus {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .user__comment {
+    padding-right: 1.5rem;
   }
 }/*# sourceMappingURL=Comment.css.map */
