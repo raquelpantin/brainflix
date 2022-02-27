@@ -1,7 +1,7 @@
 import "./VideoList.scss";
 import VideoThumbnail from "../VideoThumbnail/VideoThumbnail";
 
-export default function VideoList({ videoData, currentVideo }) {
+export default function VideoList({ videoData, currentVideo, nextVideo }) {
   return (
     <section className="videolist__container">
       <h2 className="videolist__header">NEXT VIDEOS</h2>
@@ -11,9 +11,11 @@ export default function VideoList({ videoData, currentVideo }) {
           return (
             <VideoThumbnail
               key={video.id}
+              id={video.id}
               title={video.title}
               channel={video.channel}
               image={video.image}
+              nextVideo={nextVideo}
             />
           );
         })}
