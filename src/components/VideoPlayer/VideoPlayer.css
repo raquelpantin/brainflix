@@ -1,5 +1,21 @@
 /*Primary Colors*/
 /*Secondary Colors*/
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTPro.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTProBold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Avenir";
+}
+
 /*Responsiveness*/
 /*Type Kit*/
 /*Layout Grid*/
@@ -152,18 +168,24 @@ textarea:focus {
   border: 2px solid #0095ff;
 }
 
-@font-face {
-  font-family: "Avenir";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTPro.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
+.videoplayer__container {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-@font-face {
-  font-family: "Avenir";
-  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTProBold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
+.videoplayer__video {
+  width: 100%;
 }
-body {
-  font-family: "Avenir";
+@media screen and (min-width: 768px) {
+  .videoplayer__video {
+    width: auto;
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .videoplayer__video {
+    width: auto;
+    height: 98vh;
+  }
 }/*# sourceMappingURL=VideoPlayer.css.map */

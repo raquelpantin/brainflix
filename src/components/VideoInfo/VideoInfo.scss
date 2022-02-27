@@ -1,0 +1,85 @@
+@use "../../App.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset" as *;
+
+.current-video {
+  @include layout;
+  &__title {
+    @include page-header;
+    @include padding__hdln--top;
+    @include padding__hdln--bottom;
+    color: $brainflix-black;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $mercury;
+    border-bottom: 1px solid $mercury;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__container-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__channel {
+    color: $brainflix-black;
+    @include subheader;
+    @include padding__component--bottom;
+  }
+
+  &__date {
+    color: $silver;
+    @include body-copy;
+  }
+
+  &__container-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__views-container {
+    display: flex;
+    @include padding__component--bottom;
+  }
+
+  &__views--icon {
+    margin-right: 0.5rem;
+  }
+
+  &__views {
+    @include body-copy;
+    color: $silver;
+  }
+
+  &__likes-container {
+    display: flex;
+  }
+
+  &__likes--icon {
+    margin-right: 0.5rem;
+  }
+
+  &__likes {
+    @include body-copy;
+    color: $silver;
+  }
+
+  &__description {
+    @include body-copy;
+    color: $brainflix-black;
+    @include padding__component--top;
+    @include padding__component--bottom;
+  }
+
+  &__comment-count {
+    @include subheader;
+    color: $brainflix-black;
+    @include padding__component--bottom;
+  }
+}

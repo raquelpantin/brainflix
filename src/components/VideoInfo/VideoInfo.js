@@ -4,31 +4,35 @@ import likesIcon from "../../assets/images/icons/likes.svg";
 
 export default function VideoInfo({ currentVideo }) {
   return (
-    <section>
-      <h1>{currentVideo.title}</h1>
-      <div>
-        <h2>{currentVideo.channel}</h2>
-        <p>
-          {new Date(currentVideo.timestamp).getMonth() +
-            1 +
-            "/" +
-            new Date(currentVideo.timestamp).getDate() +
-            "/" +
-            new Date(currentVideo.timestamp).getFullYear()}
-        </p>
-      </div>
-      <div>
-        <div>
-          <img src={viewsIcon}></img>
-          <p>{currentVideo.views}</p>
+    <section className="current-video">
+      <h1 className="current-video__title">{currentVideo.title}</h1>
+      <div className="current-video__container">
+        <div className="current-video__container-left">
+          <h2 className="current-video__channel">By {currentVideo.channel}</h2>
+          <p className="current-video__date">
+            {new Date(currentVideo.timestamp).getMonth() +
+              1 +
+              "/" +
+              new Date(currentVideo.timestamp).getDate() +
+              "/" +
+              new Date(currentVideo.timestamp).getFullYear()}
+          </p>
         </div>
-        <div>
-          <img src={likesIcon}></img>
-          <p>{currentVideo.likes}</p>
+        <div className="current-video__container-right">
+          <div className="current-video__views-container">
+            <img className="current-video__views--icon" src={viewsIcon}></img>
+            <p className="current-video__views">{currentVideo.views}</p>
+          </div>
+          <div className="current-video__likes-container">
+            <img className="current-video__likes--icon" src={likesIcon}></img>
+            <p className="current-video__likes">{currentVideo.likes}</p>
+          </div>
         </div>
       </div>
-      <p>{currentVideo.description}</p>
-      <p>{currentVideo.comments.length} Comments</p>
+      <p className="current-video__description">{currentVideo.description}</p>
+      <p className="current-video__comment-count">
+        {currentVideo.comments.length} Comments
+      </p>
     </section>
   );
 }

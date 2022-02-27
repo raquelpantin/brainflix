@@ -1,5 +1,21 @@
 /*Primary Colors*/
 /*Secondary Colors*/
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTPro.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTProBold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Avenir";
+}
+
 /*Responsiveness*/
 /*Type Kit*/
 /*Layout Grid*/
@@ -150,22 +166,6 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #0095ff;
-}
-
-@font-face {
-  font-family: "Avenir";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTPro.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative/AvenirNextLTProBold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-body {
-  font-family: "Avenir";
 }
 
 .commentBox {

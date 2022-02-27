@@ -168,89 +168,177 @@ textarea:focus {
   border: 2px solid #0095ff;
 }
 
-.video__container {
-  display: flex;
-  flex-direction: column;
+.current-video {
   margin: 0 1rem;
 }
 @media screen and (min-width: 768px) {
-  .video__container {
+  .current-video {
     margin: 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video__container {
+  .current-video {
     margin: 0 auto;
   }
 }
-.video__header {
-  font-size: 0.813rem;
-  line-height: 1.125rem;
+.current-video__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  color: #afafaf;
+  color: #323232;
 }
 @media screen and (min-width: 768px) {
-  .video__header {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+  .current-video__title {
+    font-size: 2.063rem;
+    line-height: 2.75rem;
     font-weight: 700;
   }
 }
 @media screen and (min-width: 768px) {
-  .video__header {
+  .current-video__title {
     padding-top: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .video__header {
+  .current-video__title {
     padding-bottom: 1.5rem;
   }
 }
-.video__card {
+.current-video__container {
   display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .video__card {
-    padding-bottom: 1.5rem;
-  }
-}
-.video__image {
-  border-radius: 4px;
-  width: 9rem;
-  height: 5.25rem;
-}
-.video__card-data {
+.current-video__container-left {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  margin-left: 1rem;
 }
-.video__title {
+.current-video__channel {
+  color: #323232;
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 700;
-  color: #323232;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .video__title {
+  .current-video__channel {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 700;
   }
 }
-.video__channel {
+@media screen and (min-width: 768px) {
+  .current-video__channel {
+    padding-bottom: 1.5rem;
+  }
+}
+.current-video__date {
+  color: #afafaf;
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 400;
-  color: #323232;
 }
 @media screen and (min-width: 768px) {
-  .video__channel {
+  .current-video__date {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
   }
-}/*# sourceMappingURL=VideoList.css.map */
+}
+.current-video__container-right {
+  display: flex;
+  flex-direction: column;
+}
+.current-video__views-container {
+  display: flex;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .current-video__views-container {
+    padding-bottom: 1.5rem;
+  }
+}
+.current-video__views--icon {
+  margin-right: 0.5rem;
+}
+.current-video__views {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .current-video__views {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.current-video__likes-container {
+  display: flex;
+}
+.current-video__likes--icon {
+  margin-right: 0.5rem;
+}
+.current-video__likes {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .current-video__likes {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.current-video__description {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .current-video__description {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .current-video__description {
+    padding-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .current-video__description {
+    padding-bottom: 1.5rem;
+  }
+}
+.current-video__comment-count {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  color: #323232;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .current-video__comment-count {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .current-video__comment-count {
+    padding-bottom: 1.5rem;
+  }
+}/*# sourceMappingURL=VideoInfo.css.map */

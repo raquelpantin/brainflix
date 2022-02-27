@@ -2,9 +2,9 @@ import "./VideoPlayer.scss";
 
 export default function VideoPlayer({ currentVideo }) {
   return (
-    <section className="current-video__container">
+    <section className="videoplayer__container">
       <video
-        className="current-video__video"
+        className="videoplayer__video"
         poster={currentVideo.image}
         controls
       >
