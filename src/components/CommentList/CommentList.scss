@@ -3,3 +3,7 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/reset" as *;
+
+.commentlist__container {
+  @include layout;
+}

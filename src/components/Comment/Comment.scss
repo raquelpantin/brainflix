@@ -1,1 +1,51 @@
+@use "../../App.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset" as *;
 
+.user {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $mercury;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  &__avatar {
+    border-radius: 50%;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: $mercury;
+    margin-right: 1rem;
+  }
+
+  &__comment-container {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__name {
+    @include subheader;
+    color: $brainflix-black;
+    list-style: none;
+  }
+
+  &__date {
+    @include body-copy;
+    color: $silver;
+    list-style: none;
+  }
+
+  &__comment {
+    @include body-copy;
+    color: $brainflix-black;
+  }
+}

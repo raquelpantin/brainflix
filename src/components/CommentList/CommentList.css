@@ -166,4 +166,18 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #0095ff;
+}
+
+.commentlist__container {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentlist__container {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .commentlist__container {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=CommentList.css.map */

@@ -3,7 +3,7 @@ import "./CommentList.scss";
 
 export default function CommentList({ currentVideo }) {
   return (
-    <section>
+    <section className="commentlist__container">
       {currentVideo.comments.map((comment) => {
         return (
           <Comment
