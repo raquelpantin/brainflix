@@ -168,22 +168,22 @@ textarea:focus {
   border: 2px solid #0095ff;
 }
 
-.video__container {
+.videolist__container {
   display: flex;
   flex-direction: column;
   margin: 0 1rem;
 }
 @media screen and (min-width: 768px) {
-  .video__container {
+  .videolist__container {
     margin: 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video__container {
+  .videolist__container {
     margin: 0 auto;
   }
 }
-.video__header {
+.videolist__header {
   font-size: 0.813rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -192,65 +192,19 @@ textarea:focus {
   color: #afafaf;
 }
 @media screen and (min-width: 768px) {
-  .video__header {
+  .videolist__header {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 700;
   }
 }
 @media screen and (min-width: 768px) {
-  .video__header {
+  .videolist__header {
     padding-top: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .video__header {
+  .videolist__header {
     padding-bottom: 1.5rem;
-  }
-}
-.video__card {
-  display: flex;
-  padding-bottom: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .video__card {
-    padding-bottom: 1.5rem;
-  }
-}
-.video__image {
-  border-radius: 4px;
-  width: 9rem;
-  height: 5.25rem;
-}
-.video__card-data {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  margin-left: 1rem;
-}
-.video__title {
-  font-size: 0.813rem;
-  line-height: 1.125rem;
-  font-weight: 700;
-  color: #323232;
-}
-@media screen and (min-width: 768px) {
-  .video__title {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: 700;
-  }
-}
-.video__channel {
-  font-size: 0.813rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  color: #323232;
-}
-@media screen and (min-width: 768px) {
-  .video__channel {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: 400;
   }
 }/*# sourceMappingURL=VideoList.css.map */

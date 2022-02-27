@@ -1,0 +1,41 @@
+@use "../../App.scss" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset" as *;
+
+.video {
+  &__card {
+    display: flex;
+    @include padding__component--bottom;
+  }
+
+  &__image {
+    border-radius: 4px;
+    width: 7.5rem;
+    height: 4.25rem;
+  }
+
+  &__card-data {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    @include subheader;
+    color: $brainflix-black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__channel {
+    @include body-copy;
+    color: $brainflix-black;
+    padding-top: 0.75rem;
+  }
+}
