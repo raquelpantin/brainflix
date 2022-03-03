@@ -8,7 +8,7 @@ export default function VideoPlayer({ currentVideo }) {
         poster={currentVideo.image}
         controls
       >
-        <source src={currentVideo.video} type="video/mp4" />
+        {/* <source src={currentVideo.video} type="video/mp4" /> */}
         Your browser does not support the video tag.
       </video>
     </section>

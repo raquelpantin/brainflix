@@ -8,7 +8,7 @@ const CommentForm = () => {
       <img className="commentBox__avatar" src={avatar}></img>
       <form className="commentBox__form" method="get">
         <div className="commentBox__text-container">
-          <label for="text">JOIN THE CONVERSATION</label>
+          <label htmlFor="text">JOIN THE CONVERSATION</label>
           <textarea
             className="commentBox__text"
             name="text"
