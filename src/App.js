@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -6,20 +7,18 @@ import Upload from "./pages/Upload/Upload";
 
 function App() {
   return (
-    <div>
-      <Router>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/upload" component={Upload} />
-            <Route path="/:id" component={Home} />
-          </Switch>
-        </main>
-      </Router>
-    </div>
+    <Router>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/upload" component={Upload} />
+          <Route path="/video/:videoID" component={Home} />
+        </Switch>
+      </main>
+    </Router>
   );
 }
 

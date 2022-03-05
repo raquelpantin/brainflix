@@ -1,13 +1,13 @@
 import Comment from "../Comment/Comment";
 import "./CommentList.scss";
 
-export default function CommentList({ currentVideo }) {
+export default function CommentList({ comments }) {
   return (
     <section className="commentlist__container">
-      {currentVideo.comments.map((comment) => {
+      {comments.map((comment) => {
         return (
           <Comment
-            key={comment.name}
+            key={comment.id}
             name={comment.name}
             text={comment.comment}
             date={comment.timestamp}

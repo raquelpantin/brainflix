@@ -13,6 +13,9 @@
     @include padding__hdln--bottom;
     @include layout;
     @include page-header;
+    @include desktop {
+      margin-left: 13rem;
+    }
   }
 
   &__form {
@@ -22,12 +25,21 @@
   &__thumbnail {
     display: flex;
     flex-direction: column;
+    @include desktop {
+      margin-right: 1rem;
+    }
   }
 
   &__thumbnail-image {
     border-radius: 4px;
     width: 100%;
     margin-bottom: 1rem;
+    @include tablet {
+      width: 50vw;
+    }
+    @include desktop {
+      width: 20vw;
+    }
   }
 
   &__label {
@@ -36,9 +48,39 @@
     color: $silver;
   }
 
+  &__label-thumbnail {
+    @include label-button;
+    padding-bottom: 0.25rem;
+    color: $silver;
+    @include tablet {
+      border-top: 1px solid $mercury;
+      padding-top: 2rem;
+    }
+    @include desktop {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+
+  &__container {
+    @include desktop {
+      display: flex;
+      border-top: 1px solid $mercury;
+      padding-top: 2rem;
+      margin-left: 13rem;
+      margin-right: 13rem;
+    }
+  }
+
   &__input-container {
     display: flex;
     flex-direction: column;
+  }
+
+  &__input {
+    @include desktop {
+      width: 100%;
+    }
   }
 
   &__input-title {
@@ -53,7 +95,7 @@
     background-color: $alabaster;
     @include tablet {
       height: 2.5rem;
-      padding: 1rem 1rem 1rem 2.5rem;
+      padding: 1rem 1rem 1rem 1rem;
     }
   }
 
@@ -72,12 +114,23 @@
     background-color: $alabaster;
     height: 6rem;
     width: 100%;
-
     margin-bottom: 1.5rem;
   }
 
   &__button-container {
     position: relative;
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border-top: 1px solid $mercury;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    @include desktop {
+      margin-left: 13rem;
+      margin-right: 13rem;
+    }
   }
 
   &__button {
@@ -88,12 +141,20 @@
     height: 2.5rem;
     color: $white;
     @include label-button;
+    @include tablet {
+      width: 9.375rem;
+      margin-left: 5rem;
+    }
   }
 
   &__button-icon {
     position: absolute;
     left: 0.5rem;
-    bottom: 3.75rem;
+    bottom: 0.5rem;
+    @include tablet {
+      left: 5.25rem;
+      bottom: 0.55rem;
+    }
   }
 
   &__cancel {
@@ -102,5 +163,21 @@
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__cancel-tablet {
+    display: none;
+    @include tablet {
+      display: flex;
+      color: $brainflix-blue;
+      @include label-button;
+    }
+  }
+
+  &__button-icon--position {
+    position: relative;
   }
 }

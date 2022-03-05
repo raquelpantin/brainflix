@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "../../assets/images/logo/BrainFlix-logo.svg";
 import searchIcon from "../../assets/images/icons/search.svg";
@@ -7,9 +8,9 @@ import upload from "../../assets/images/icons/upload.svg";
 const Header = () => {
   return (
     <header className="header">
-      <a href="../../App.js">
+      <Link to={"/"}>
         <img className="header__logo" src={logo} alt="Brainflix Logo"></img>
-      </a>
+      </Link>
       <div className="header__container-all">
         <div className="header__search-container">
           <input
@@ -17,14 +18,28 @@ const Header = () => {
             type="text"
             placeholder="Search"
           />
-          <img className="header__search-icon" src={searchIcon}></img>
-          <img className="header__avatar" src={avatar}></img>
+          <img
+            className="header__search-icon"
+            src={searchIcon}
+            alt="search icon"
+          ></img>
+          <img className="header__avatar" src={avatar} alt="avatar"></img>
         </div>
-        <div className="header__upload-container">
-          <button className="header__button">UPLOAD</button>
-          <img className="header__upload-icon" src={upload}></img>
-        </div>
-        <img className="header__avatar--tablet-dt" src={avatar}></img>
+        <Link to={"/upload"} className="header__upload-link">
+          <div className="header__upload-container">
+            <button className="header__button">UPLOAD</button>
+            <img
+              className="header__upload-icon"
+              src={upload}
+              alt="upload icon"
+            ></img>
+          </div>
+        </Link>
+        <img
+          className="header__avatar--tablet-dt"
+          src={avatar}
+          alt="avatar"
+        ></img>
       </div>
     </header>
   );

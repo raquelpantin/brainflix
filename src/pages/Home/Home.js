@@ -1,46 +1,63 @@
-import "./Home.scss";
-import { Component } from "react";
-import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
-import VideoInfo from "../../components/VideoInfo/VideoInfo";
-import CommentForm from "../../components/CommentForm/CommentForm";
-import CommentList from "../../components/CommentList/CommentList";
-import VideoList from "../../components/VideoList/VideoList";
-import videoData from "../../data/video-details.json";
+import React from "react";
+import axios from "axios";
+import Main from "../../components/Main/Main";
 
-class Home extends Component {
+const apiURL = "https://project-2-api.herokuapp.com/videos";
+const apiKey = "?api_key=947e9003-8493-44a0-9c4b-d1cf7da8bd07";
+console.log("hello");
+
+export default class Home extends React.Component {
   state = {
-    videoData: videoData,
-    currentVideo: videoData[0],
+    videoData: [],
+    currentVideo: {},
+    comments: [],
   };
 
-  nextVideo = (id) => {
-    const nextVideoId = this.state.videoData.findIndex(
-      (video) => id === video.id
-    );
-    this.setState({
-      currentVideo: this.state.videoData[nextVideoId],
-    });
+  getVideoByID = (id) => {
+    axios
+      .get(`${apiURL}/${id}${apiKey}`)
+      .then((response) => {
+        console.log(response.data);
+        this.setState({
+          currentVideo: response.data,
+          comments: response.data.comments,
+        });
+      })
+      .catch((err) => console.log(err));
   };
+
+  componentDidMount() {
+    axios
+      .get(apiURL + apiKey)
+      .then((response) => {
+        console.log(response);
+        this.setState({
+          videoData: response.data,
+        });
+        const videoID = this.props.match.params.videoID || response.data[0].id;
+        this.getVideoByID(videoID);
+      })
+      .catch((err) => console.log(err));
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const videoID =
+      this.props.match.params.videoID || this.state.videoData[0].id;
+
+    if (prevState.currentVideo && prevState.currentVideo.id !== videoID) {
+      this.getVideoByID(videoID);
+    }
+  }
 
   render() {
     return (
       <>
-        <VideoPlayer currentVideo={this.state.currentVideo} />
-        <div className="info__container">
-          <div className="info__container-left">
-            <VideoInfo currentVideo={this.state.currentVideo} />
-            <CommentForm />
-            <CommentList currentVideo={this.state.currentVideo} />
-          </div>
-          <VideoList
-            nextVideo={this.nextVideo}
-            videoData={this.state.videoData}
-            currentVideo={this.state.currentVideo}
-          />
-        </div>
+        <Main
+          videoData={this.state.videoData}
+          currentVideo={this.state.currentVideo}
+          comments={this.state.comments}
+        />
       </>
     );
   }
 }
-
-export default Home;

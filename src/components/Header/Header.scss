@@ -85,6 +85,10 @@
     }
   }
 
+  &__upload-link {
+    text-decoration: none;
+  }
+
   &__upload-container {
     position: relative;
     display: flex;

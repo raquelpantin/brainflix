@@ -2,7 +2,7 @@ import "./VideoInfo.scss";
 import viewsIcon from "../../assets/images/icons/views.svg";
 import likesIcon from "../../assets/images/icons/likes.svg";
 
-export default function VideoInfo({ currentVideo }) {
+export default function VideoInfo({ currentVideo, comments }) {
   return (
     <section className="current-video">
       <h1 className="current-video__title">{currentVideo.title}</h1>
@@ -30,9 +30,7 @@ export default function VideoInfo({ currentVideo }) {
         </div>
       </div>
       <p className="current-video__description">{currentVideo.description}</p>
-      <p className="current-video__comment-count">
-        {currentVideo.comments.length} Comments
-      </p>
+      <p className="current-video__comment-count">{comments.length} Comments</p>
     </section>
   );
 }
