@@ -41,6 +41,7 @@
 
   &__text {
     @include body-copy;
+    resize: none;
     font-family: "avenir";
     border-radius: 4px;
     border: 1px solid $mercury;

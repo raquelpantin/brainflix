@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
+import PageHeader from "./components/PageHeader/PageHeader";
 import Home from "./pages/Home/Home";
 import Upload from "./pages/Upload/Upload";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <header>
-        <Header />
+        <PageHeader />
       </header>
       <main>
         <Switch>

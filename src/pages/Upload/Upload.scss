@@ -145,6 +145,10 @@
       width: 9.375rem;
       margin-left: 5rem;
     }
+
+    &:hover {
+      background-color: $brainflix-darkblue;
+    }
   }
 
   &__button-icon {

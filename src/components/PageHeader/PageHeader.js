@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "./Header.scss";
+import "./PageHeader.scss";
 import logo from "../../assets/images/logo/BrainFlix-logo.svg";
 import searchIcon from "../../assets/images/icons/search.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import upload from "../../assets/images/icons/upload.svg";
 
-const Header = () => {
+const PageHeader = () => {
   return (
     <header className="header">
       <Link to={"/"}>
@@ -45,4 +45,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default PageHeader;
