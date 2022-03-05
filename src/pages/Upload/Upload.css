@@ -166,4 +166,156 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #0095ff;
+}
+
+.upload {
+  padding-top: 1.5rem;
+  border-top: solid 1px #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .upload {
+    padding-top: 2.25rem;
+  }
+}
+.upload__title {
+  color: #323232;
+  padding-bottom: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .upload__title {
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .upload__title {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .upload__title {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .upload__title {
+    font-size: 2.063rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
+.upload__form {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .upload__form {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .upload__form {
+    margin: 0 auto;
+  }
+}
+.upload__thumbnail {
+  display: flex;
+  flex-direction: column;
+}
+.upload__thumbnail-image {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.upload__label {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  padding-bottom: 0.25rem;
+  color: #afafaf;
+}
+.upload__input-container {
+  display: flex;
+  flex-direction: column;
+}
+.upload__input-title {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  font-family: "avenir";
+  margin-bottom: 1rem;
+  height: 2.25rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  background-color: #fafafa;
+}
+@media screen and (min-width: 768px) {
+  .upload__input-title {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .upload__input-title {
+    height: 2.5rem;
+    padding: 1rem 1rem 1rem 2.5rem;
+  }
+}
+.upload__description-container {
+  display: flex;
+  flex-direction: column;
+}
+.upload__input-description {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  font-family: "avenir";
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  color: #323232;
+  padding: 0.75rem;
+  background-color: #fafafa;
+  height: 6rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .upload__input-description {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.upload__button-container {
+  position: relative;
+}
+.upload__button {
+  background-color: #0095ff;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.upload__button-icon {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 3.75rem;
+}
+.upload__cancel {
+  color: #0095ff;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=Upload.css.map */
