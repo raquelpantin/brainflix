@@ -4,7 +4,6 @@ import Main from "../../components/Main/Main";
 
 const apiURL = "https://project-2-api.herokuapp.com/videos";
 const apiKey = "?api_key=947e9003-8493-44a0-9c4b-d1cf7da8bd07";
-console.log("hello");
 
 export default class Home extends React.Component {
   state = {
