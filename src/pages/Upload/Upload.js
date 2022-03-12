@@ -1,4 +1,5 @@
 import "./Upload.scss";
+import { Link } from "react-router-dom";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 import publishIcon from "../../assets/images/icons/publish.svg";
 import React from "react";
@@ -98,7 +99,9 @@ export default class Upload extends React.Component {
             </div>
           </div>
           <div className="upload__button-container">
-            <p className="upload__cancel-tablet">CANCEL</p>
+            <Link className="upload__cancel--link" to={"/"}>
+              <p className="upload__cancel-tablet">CANCEL</p>
+            </Link>
             <div className="upload__button-icon--position">
               <button className="upload__button" type="submit">
                 PUBLISH
@@ -109,7 +112,9 @@ export default class Upload extends React.Component {
                 alt="publish icon"
               />
             </div>
-            <p className="upload__cancel">CANCEL</p>
+            <Link className="upload__cancel--link" to={"/"}>
+              <p className="upload__cancel">CANCEL</p>
+            </Link>
           </div>
         </form>
       </section>

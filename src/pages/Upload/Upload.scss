@@ -171,6 +171,10 @@
     @include tablet {
       display: none;
     }
+
+    &--link {
+      text-decoration: none;
+    }
   }
 
   &__cancel-tablet {

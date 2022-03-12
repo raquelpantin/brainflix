@@ -2,8 +2,7 @@ import React from "react";
 import axios from "axios";
 import Main from "../../components/Main/Main";
 
-const apiURL = "https://project-2-api.herokuapp.com/videos";
-const apiKey = "?api_key=947e9003-8493-44a0-9c4b-d1cf7da8bd07";
+const apiURL = "http://localhost:7070/videos";
 
 export default class Home extends React.Component {
   state = {
@@ -14,7 +13,7 @@ export default class Home extends React.Component {
 
   getVideoByID = (id) => {
     axios
-      .get(`${apiURL}/${id}${apiKey}`)
+      .get(`${apiURL}/${id}`)
       .then((response) => {
         console.log(response.data);
         this.setState({
@@ -27,7 +26,7 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     axios
-      .get(apiURL + apiKey)
+      .get(`${apiURL}`)
       .then((response) => {
         console.log(response);
         this.setState({
