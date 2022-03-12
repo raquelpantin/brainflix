@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 import publishIcon from "../../assets/images/icons/publish.svg";
 import React from "react";
+import axios from "axios";
+
+const API_URL = "http://localhost:7070/videos";
 
 export default class Upload extends React.Component {
   state = {
@@ -50,6 +53,14 @@ export default class Upload extends React.Component {
     event.preventDefault();
 
     if (this.isFormValid()) {
+      axios
+        .post(`${API_URL}`, {
+          title: event.target.title.value,
+          description: event.target.description.value,
+        })
+        .then((response) => {
+          console.log(response.data);
+        });
       alert("Upload Successful! Redirecting back to the Home Page");
       this.props.history.push("/");
     } else {
