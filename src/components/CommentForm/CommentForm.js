@@ -6,7 +6,13 @@ const CommentForm = () => {
   return (
     <section className="commentBox">
       <img className="commentBox__avatar" src={avatar}></img>
-      <form className="commentBox__form" method="get">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+        className="commentBox__form"
+        method="get"
+      >
         <div className="commentBox__text-container">
           <label htmlFor="text">JOIN THE CONVERSATION</label>
           <textarea
