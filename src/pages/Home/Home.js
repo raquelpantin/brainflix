@@ -38,7 +38,7 @@ export default class Home extends React.Component {
       .catch((err) => console.log(err));
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     const videoID =
       this.props.match.params.videoID || this.state.videoData[0].id;
 

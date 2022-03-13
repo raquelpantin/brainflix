@@ -7,9 +7,9 @@ const CommentForm = () => {
     <section className="commentBox">
       <img className="commentBox__avatar" src={avatar}></img>
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
+        // onSubmit={(e) => {
+        //   e.preventDefault();
+        // }}
         className="commentBox__form"
         method="get"
       >

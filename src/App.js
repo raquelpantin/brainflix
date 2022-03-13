@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PageHeader from "./components/PageHeader/PageHeader";
 import Home from "./pages/Home/Home";
 import Upload from "./pages/Upload/Upload";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <header>
         <PageHeader />
       </header>
